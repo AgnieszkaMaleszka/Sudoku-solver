@@ -57,7 +57,7 @@ class SudokuGUI:
         tk.Label(side_frame, textvariable=self.mutation_warning, fg="red", bg=PASTEL_BLUE, wraplength=180).pack()
 
         tk.Label(side_frame, text="Algorytm:", bg=PASTEL_BLUE, fg=NAVY).pack(anchor="w", pady=5)
-        tk.OptionMenu(side_frame, self.executable, "../build/Release/seq.exe", "./build/Release/cuda.exe", "./build/Release/omp.exe").pack(fill="x")
+        tk.OptionMenu(side_frame, self.executable, "../build/Release/seq.exe", "../build/Release/cuda.exe", "../build/Release/omp.exe").pack(fill="x")
 
         def style_btn(widget): widget.configure(bg=NAVY, fg="white", activebackground="#002244", activeforeground="white")
 
@@ -128,7 +128,7 @@ class SudokuGUI:
             self.status_text.set(f"Nie znaleziono pliku: {self.executable.get()}")
             return
 
-        temp_input = "temp_input.txt"
+        temp_input = "../input/temp_input.txt"
         self.save_board_to_file(temp_input)
         cmd = [
             self.executable.get(),
