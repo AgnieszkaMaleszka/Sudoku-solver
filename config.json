@@ -1,0 +1,9 @@
+{
+  "tests": 1,
+  "grid_size": 9,
+  "empty_ratio": 0.5,
+  "population": 512,
+  "iterations": 1500,
+  "mutation": 0.1,
+  "algorithms": ["omp", "cuda"]
+}
