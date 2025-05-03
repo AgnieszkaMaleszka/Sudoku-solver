@@ -2,7 +2,7 @@ import os
 import glob
 from collections import defaultdict
 
-input_folder = "output"
+input_folder = "../output"
 output_file = os.path.join(input_folder, "average.txt")
 
 file_paths = [f for f in glob.glob(os.path.join(input_folder, "*")) if os.path.isfile(f)]
