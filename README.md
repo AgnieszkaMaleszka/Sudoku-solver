@@ -97,7 +97,7 @@ Parametry:
 * `1000` – liczba iteracji
 * `0.05` – współczynnik mutacji
 
-> ℹ️ Parametry można też zdefiniować w pliku konfiguracyjnym, jeśli solver obsługuje taki tryb (np. JSON lub INI)
+> ℹ️ Parametry można też zdefiniować w pliku konfiguracyjnym. 
 
 ---
 
